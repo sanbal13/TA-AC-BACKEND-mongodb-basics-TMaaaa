@@ -12,6 +12,7 @@
 12. db.articles.update({"title": "Game"}, {$push: {tags: "Game"}});
 13. Without set  the data is completely replaced
     with set only the particular field is updated.
+13. db.articles.update({title:"MongoDB"}, {$inc: {'author.age': 5}});    
 14. db.articles.remove({"_id" : ObjectId("60a80928bee736a534b6e748")});
     
 // Sports Database
